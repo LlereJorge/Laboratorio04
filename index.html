@@ -8,10 +8,18 @@
 <body>
   
     <header>
-        <h1>Laboratorio 04</h1>
+        <h1>Laboratorio 04 - HTML 5: Listas, Hipervínculos y Tablas</h1>
         <p>Autor: Jorge Gabriel Llerena Huanca</p>
     </header>
-
+    
+    <nav>
+        <ul>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#hipervinculos">Hipervínculos</a></li>
+            <li><a href="cuenta.html">Tabla de Notas</a></li>
+        </ul>
+    </nav>
+    
     <main>
         <!-- Sección de Listas -->
         <section id="listas">
@@ -89,8 +97,46 @@
                 </ul>
             </article>
         </section>
-        
+        <!-- Sección de Hipervínculos -->
+        <section id="hipervinculos">
+            <h2>Ejercicios de Hipervínculos</h2>
+            
+            <!-- Hipervínculo externo que abre en nueva pestaña -->
+            <article>
+                <h3>Enlace externo (nueva pestaña)</h3>
+                <p>
+                    <a href="https://www.unsa.edu.pe" target="_blank">Visitar la página de la UNSA</a>
+                </p>
+            </article>
+            
+            <!-- Hipervínculo interno hacia cuenta.html -->
+            <article>
+                <h3>Enlace interno</h3>
+                <p>
+                    <a href="cuenta.html">Ir a la página de notas (cuenta.html)</a>
+                </p>
+            </article>
+            
+            <!-- Hipervínculo interno dentro de la misma página -->
+            <article>
+                <h3>Enlace interno (ancla)</h3>
+                <p>
+                    <a href="#listas">Volver a la sección de Listas</a>
+                </p>
+            </article>
+            
+            <!-- Combinación imagen + enlace -->
+            <article>
+                <h3>Imagen con enlace</h3>
+                <p>
+                    <a href="https://www.github.com" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" 
+                             alt="Logo de GitHub" width="100">
+                        <br>
+                    </a>
+                </p>
+            </article>
+        </section>
     </main>
-
 </body>
 </html>
